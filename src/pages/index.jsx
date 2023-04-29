@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
+import { TeamCards } from '@/components/TeamCards'
 import {
   GitHubIcon,
   InstagramIcon,
@@ -47,6 +48,7 @@ function MailIcon(props) {
     </svg>
   )
 }
+
 
 function BriefcaseIcon(props) {
   return (
@@ -259,6 +261,10 @@ export default function Home({ articles }) {
         />
       </Head>
       <Container className="mt-9">
+        <img
+          className="inline-block h-24 w-24 rounded-full hover:animate-bounce"
+          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+          alt=""/>
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Software designer, founder, and amateur astronaut.
@@ -306,6 +312,7 @@ export default function Home({ articles }) {
             <Resume />
           </div>
         </div>
+        <TeamCards />
       </Container>
     </>
   )
@@ -324,3 +331,5 @@ export async function getStaticProps() {
     },
   }
 }
+
+

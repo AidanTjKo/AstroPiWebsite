@@ -72,7 +72,7 @@ export default function Experiment() {
               gravitational time dilation and velocity (or kinematic) time dilation.
               </p>
               <p>
-              <span className="font-bold">Gravitational Time Dilation:</span> According to Einstein's theory of General 
+              <span className="font-bold">Gravitational Time Dilation:</span> According to Einstein&aspos;s theory of General 
               Relativity, gravity can distort the fabric of spacetime. This results in 
               gravitational time dilation, where time moves slower in stronger gravitational 
               fields. So, a clock closer to a massive object (like a planet or a star) will 
@@ -81,23 +81,23 @@ export default function Experiment() {
 
               </p>
               <p>
-              <span className="font-bold">Velocity Time Dilation:</span> This form of time dilation arises from Einstein's 
+              <span className="font-bold">Velocity Time Dilation:</span> This form of time dilation arises from Einstein&aspos;s 
               Special Theory of Relativity. It occurs due to differences in relative velocity 
               between two observers. If one observer is moving relative to another observer, 
-              the moving observer's clock will seem to run slower. This effect becomes particularly 
+              the moving observer&aspos;s clock will seem to run slower. This effect becomes particularly 
               significant as the relative velocity approaches the speed of light.
               </p>
               <p>
               In the context of the International Space Station (ISS), both types of time dilation 
               are relevant. The ISS is moving at high speeds relative to an observer on Earth 
-              (velocity time dilation), and it's also further from the center of the Earth and 
+              (velocity time dilation), and it&aspos;s also further from the center of the Earth and 
               thus experiences less gravitational pull (gravitational time dilation).
               </p>
               <p>
               To find the total time dilation effect on the ISS, we need to combine both types of
-              time dilation. This is done by adding the individual effects. It's important to note 
-              that because the effects are very small, they don't simply add linearly. Instead, we 
-              have to use the principles of Einstein's relativity to properly combine them, giving 
+              time dilation. This is done by adding the individual effects. It&aspos;s important to note 
+              that because the effects are very small, they don&aspos;t simply add linearly. Instead, we 
+              have to use the principles of Einstein&aspos;s relativity to properly combine them, giving 
               a more accurate estimation of the overall time dilation experienced aboard the ISS.
               </p>
             </div>

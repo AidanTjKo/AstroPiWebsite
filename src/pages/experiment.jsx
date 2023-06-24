@@ -10,7 +10,8 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import blackhole from '@/images/photos/blackhole.jpg'
+
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -37,7 +38,7 @@ function MailIcon(props) {
   )
 }
 
-export default function About() {
+export default function Experiment() {
   return (
     <>
       <Head>
@@ -52,10 +53,10 @@ export default function About() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
-                src={portraitImage}
+                src={blackhole}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                className="aspect-auto rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
           </div>
@@ -71,28 +72,37 @@ export default function About() {
               gravitational time dilation and velocity (or kinematic) time dilation.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister&apos;s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I&apos;d be able to get to orbit.
+              <span className="font-bold">Gravitational Time Dilation:</span> According to Einstein's theory of General 
+              Relativity, gravity can distort the fabric of spacetime. This results in 
+              gravitational time dilation, where time moves slower in stronger gravitational 
+              fields. So, a clock closer to a massive object (like a planet or a star) will 
+              run slower than a clock that is located further away.
+
+
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad&apos;s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+              <span className="font-bold">Velocity Time Dilation:</span> This form of time dilation arises from Einstein's 
+              Special Theory of Relativity. It occurs due to differences in relative velocity 
+              between two observers. If one observer is moving relative to another observer, 
+              the moving observer's clock will seem to run slower. This effect becomes particularly 
+              significant as the relative velocity approaches the speed of light.
               </p>
               <p>
-                Today, I&apos;m the founder of Planetaria, where we&apos;re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>
-                make it to orbit — from the comfort of their own backyards.
+              In the context of the International Space Station (ISS), both types of time dilation 
+              are relevant. The ISS is moving at high speeds relative to an observer on Earth 
+              (velocity time dilation), and it's also further from the center of the Earth and 
+              thus experiences less gravitational pull (gravitational time dilation).
+              </p>
+              <p>
+              To find the total time dilation effect on the ISS, we need to combine both types of
+              time dilation. This is done by adding the individual effects. It's important to note 
+              that because the effects are very small, they don't simply add linearly. Instead, we 
+              have to use the principles of Einstein's relativity to properly combine them, giving 
+              a more accurate estimation of the overall time dilation experienced aboard the ISS.
               </p>
             </div>
           </div>
-          <div className="lg:pl-20">
+          {/* <div className="lg:pl-20">
             <ul role="list">
               <SocialLink href="#" icon={TwitterIcon}>
                 Follow on Twitter
@@ -114,7 +124,7 @@ export default function About() {
                 spencer@planetaria.tech
               </SocialLink>
             </ul>
-          </div>
+          </div> */}
         </div>
       </Container>
     </>

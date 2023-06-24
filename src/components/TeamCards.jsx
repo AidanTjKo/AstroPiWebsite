@@ -1,8 +1,11 @@
+import harris from 'src/images/portraits/harrisCrop.jpg'
+import daju from 'src/images/portraits/dajuCrop.jpg'
+import james from 'src/images/portraits/jamesCrop.jpg'
+
 const people = [{
     name: 'Aidan Ko',
     role: 'Monkey',
-    imageUrl:
-        'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl:'@/images/portraits/harrisCrop.jpg',
     twitterUrl: '#',
     linkedinUrl: '#',
 },
@@ -10,7 +13,7 @@ const people = [{
     name: 'Harris Asif',
     role: 'Monkey',
     imageUrl:
-        'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        'src/images/portraits/harrisCrop.jpg',
     twitterUrl: '#',
     linkedinUrl: '#',
 },

@@ -121,10 +121,10 @@ function MobileNavigation(props) {
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/about">Meet the Team</MobileNavItem>
-                <MobileNavItem href="/articles">Timeline</MobileNavItem>
-                <MobileNavItem href="/projects">Experiment</MobileNavItem>
-                <MobileNavItem href="/speaking">Results</MobileNavItem>
+                <MobileNavItem href="/experiment">Experiment</MobileNavItem>
+                <MobileNavItem href="/results">Results</MobileNavItem>
+                <MobileNavItem href="/our-team">Our Team</MobileNavItem>
+                <MobileNavItem href="/#">Timeline</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -161,10 +161,10 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul style={{minWidth: "370px"}} className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">Experiment</NavItem>
-        <NavItem href="/articles">Results</NavItem>
+        <NavItem href="/experiment">Experiment</NavItem>
+        <NavItem href="/results">Results</NavItem>
         <NavItem href="/our-team">Our Team</NavItem>
-        <NavItem href="/speaking">Timeline</NavItem>
+        <NavItem href="/#">Timeline</NavItem>
       </ul>
     </nav>
   )

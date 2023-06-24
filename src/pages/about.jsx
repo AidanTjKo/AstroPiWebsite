@@ -65,8 +65,8 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-              Time dilation, a key concept in Einstein's theories of relativity, 
-              describes how time can appear to 'slow down' or 'speed up' depending
+              Time dilation, a key concept in Einstein&apos;s theories of relativity, 
+              describes how time can appear to &apos;slow down&apos; or &apos;speed up&apos; depending
               on certain conditions. There are two primary types of time dilation:
               gravitational time dilation and velocity (or kinematic) time dilation.
               </p>
@@ -87,7 +87,7 @@ export default function About() {
               <p>
                 Today, I&apos;m the founder of Planetaria, where we&apos;re working on
                 civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
+                home so that the next generation of kids really <em>can</em>
                 make it to orbit — from the comfort of their own backyards.
               </p>
             </div>

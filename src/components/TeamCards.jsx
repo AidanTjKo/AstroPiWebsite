@@ -1,51 +1,54 @@
-import harris from 'src/images/portraits/harrisCrop.jpg'
-import daju from 'src/images/portraits/dajuCrop.jpg'
-import james from 'src/images/portraits/jamesCrop.jpg'
+import Image from 'next/image'
+
+import aidan from '/src/images/portraits/aidanCrop.png'
+import harris from '/src/images/portraits/harrisCrop.jpg'
+import daju from '/src/images/portraits/dajuCrop.jpg'
+import james from '/src/images/portraits/jamesCrop.jpg'
+import shez from '/src/images/portraits/shezCrop.jpeg'
+
+import chicken from '/src/images/fullChicken.jpg'
+import cow from '/src/images/photos/cow.png'
+import monkey from '/src/images/photos/monkey.png'
 
 const people = [{
     name: 'Aidan Ko',
-    role: 'Monkey',
-    imageUrl:'@/images/portraits/harrisCrop.jpg',
+    role: 'Website / AstroPi Programmer',
+    imageUrl: aidan,
     twitterUrl: '#',
     linkedinUrl: '#',
 },
 {
     name: 'Harris Asif',
-    role: 'Monkey',
-    imageUrl:
-        'src/images/portraits/harrisCrop.jpg',
+    role: 'Graphical / AstroPi Programmer',
+    imageUrl: harris,
     twitterUrl: '#',
     linkedinUrl: '#',
 },
 {
     name: 'Shehroz Khan',
-    role: 'Monkey',
-    imageUrl:
-        'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'AstroPi Programmer',
+    imageUrl: shez,
     twitterUrl: '#',
     linkedinUrl: '#',
 },
 {
     name: 'Daniel Aju',
-    role: 'Monkey',
-    imageUrl:
-        'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'AstroPhysicist',
+    imageUrl: cow,
     twitterUrl: '#',
     linkedinUrl: '#',
 },
 {
     name: 'James Fielding',
-    role: 'Monkey',
-    imageUrl:
-        'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'Planning / Mathematician',
+    imageUrl: james,
     twitterUrl: '#',
     linkedinUrl: '#',
 },
 {
     name: 'Kunooz Seid',
-    role: 'Copywriter',
-    imageUrl:
-        'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'Graphics / Mathematician',
+    imageUrl: monkey,
     twitterUrl: '#',
     linkedinUrl: '#',
 }    // More people...
@@ -58,7 +61,7 @@ export function TeamCards() {
                 <div className="mx-auto max-w-2xl">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Meet our team</h2>
                     <p className="mt-4 text-lg leading-8 text-gray-500">
-                        We’re a dynamic group of individuals who are passionate about what we do.
+                        We&apos;re a dynamic group of individuals who are passionate about what we do.
                     </p>
                 </div>
                 <ul
@@ -67,10 +70,16 @@ export function TeamCards() {
                 >
                     {people.map((person) => (
                         <li key={person.name}>
-                            <img className="mx-auto h-56 w-56 rounded-full" src={person.imageUrl} alt="" />
+                            <Image 
+                            className="mx-auto rounded-full" 
+                            src={person.imageUrl} 
+                            alt="" 
+                            width={250} 
+                            height={56} 
+                            />
                             <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-white">{person.name}</h3>
                             <p className="text-sm leading-6 text-gray-600">{person.role}</p>
-                            <ul role="list" className="mt-6 flex justify-center gap-x-6">
+                            {/* <ul role="list" className="mt-6 flex justify-center gap-x-6">
                                 <li>
                                     <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
                                         <span className="sr-only">Twitter</span>
@@ -91,7 +100,7 @@ export function TeamCards() {
                                         </svg>
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </li>
                     ))}
                 </ul>

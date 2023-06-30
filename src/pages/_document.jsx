@@ -2,7 +2,6 @@ import { Head, Html, Main, NextScript } from 'next/document'
 
 const modeScript = `
   let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-  let isSystemDarkMode = darkModeMediaQuery.matches
   updateMode()
   darkModeMediaQuery.addEventListener('change', updateModeWithoutTransitions)
   window.addEventListener('storage', updateModeWithoutTransitions)
@@ -11,7 +10,7 @@ const modeScript = `
     let isSystemDarkMode = darkModeMediaQuery.matches
     let isDarkMode = window.localStorage.isDarkMode === 'true' || (!('isDarkMode' in window.localStorage) && isSystemDarkMode)
 
-    if (isDarkMode) {
+    if (true) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')

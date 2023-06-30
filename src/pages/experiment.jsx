@@ -156,7 +156,7 @@ export default function Experiment() {
                   />
                   <p className="text-2xl pt-16 pb-12 font-medium px-48 leading-10 text-center text-slate-500">
                   To calculate the total time dilation experienced by the ISS, we simply substitute the 
-                  values we've obtained into one of the relevant equations.
+                  values we&apos;ve obtained into one of the relevant equations.
                   </p>
       </div>
       <div style={{width:"10wh"}} className="bg-black">

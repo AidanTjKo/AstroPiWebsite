@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+
 import heroBanner from 'public/hero_banner.jpg'
 import wave from 'src/images/photos/wave.jpeg'
 import iss from '/src/images/photos/iss.jpg'
@@ -24,28 +26,28 @@ export default function Index() {
             </div>
             <div style={{backgroundImage:`url(${iss.src})`}} className="h-screen w-screen bg-no-repeat bg-center bg-cover content-center relative">
                 <div className='relative text-center py-96 -left-32'>
-                    <a href="/experiment" className=" text-center px-auto absolute snap-center px-20 py-10 font-bold text-white rounded-lg group">
+                    <Link href="/experiment" className=" text-center px-auto absolute snap-center px-20 py-10 font-bold text-white rounded-lg group">
                         <span className="absolute inset-0 w-full h-full transition duration-300 transform -translate-x-3 -translate-y-3 border-white border-2 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full transition duration-300 transform translate-x-3 translate-y-3 bg-gray-800 border-white border-2 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
                         <span className="relative text-xl text-white" >Experiment</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div style={{backgroundImage:`url(${wave.src})`,backgroundSize:"contain",backgroundRepeat:"no-repeat", height:"100vh", backgroundPosition:"center"}} className="relative border-solid border-white border-2">
                 <div className='relative text-center py-96 -left-28'>
-                    <a href="/#" className=" text-center px-auto absolute snap-center px-20 py-10 font-bold text-white rounded-lg group">
+                    <Link href="/#" className=" text-center px-auto absolute snap-center px-20 py-10 font-bold text-white rounded-lg group">
                         <span className="absolute inset-0 w-full h-full transition duration-300 transform -translate-x-3 -translate-y-3 border-white border-2 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full transition duration-300 transform translate-x-3 translate-y-3 bg-gray-800 border-white border-2 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
                         <span className="relative text-xl text-white" >Results</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div style={{backgroundImage:`url(${spaceBanner.src})`}} className="h-screen w-screen bg-contain bg-center bg-repeat content-center relative">
-                <a href="/our-team" className="py-96 -ml-32 -mt-36 left-1/2 top-1/2 text-center relative inline-flex items-center justify-center px-20 py-6 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+                <Link href="/our-team" className="py-96 -ml-32 -mt-36 left-1/2 top-1/2 text-center relative inline-flex items-center justify-center px-20 py-6 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
                     <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
                     <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
                     <span className="relative group-hover:text-black">Meet the Team</span>
-                </a>
+                </Link>
             </div>
         </>
     )

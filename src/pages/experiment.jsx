@@ -165,7 +165,7 @@ export default function Experiment() {
           Once the time dilation effect has been calculated, it can be applied to the wavelength of the 
           uplink transmission to the ISS. This is done by multiplying the time dilation factor by the 
           original wavelength. The wavelength of a wave is directly proportional to its period (and inversely 
-          proportional to its frequency), so if time appears to be 'stretched' due to time dilation, so too will 
+          proportional to its frequency), so if time appears to be &apos;stretched&apos; due to time dilation, so too will 
           the wavelength. The equation to calculate the wavelength recieved by the ISS is as follows:
           </p>
           <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-100">

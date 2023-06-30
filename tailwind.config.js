@@ -4,6 +4,10 @@ module.exports = {
   darkMode: 'class',
   plugins: [require('@tailwindcss/typography')],
   theme: {
+    animation: {
+      'spin-slow': 'spin 4s linear infinite',
+      'spin-slower': 'spin 6s linear infinite'
+    },
     scale: {
       '200': '2',
       '300': '3',

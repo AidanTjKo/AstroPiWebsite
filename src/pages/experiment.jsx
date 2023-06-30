@@ -4,12 +4,16 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import { CircleBackground } from '@/components/CircleBackground'
+
 import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
+
+
 
 import blackhole from '@/images/photos/blackhole.jpg'
 import gravityTimeDilation from '@/images/photos/gravityTimedilation.png'
@@ -141,7 +145,7 @@ export default function Experiment() {
                   (velocity time dilation), and it&apos;s also further from the center of the Earth and 
                   thus experiences less gravitational pull (gravitational time dilation).
                   </p>
-                  <hr class="w-11/12 h-0.5 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+                  <hr className="w-11/12 h-0.5 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
                   <p className="text-4xl py-14 font-medium  px-48 leading-10 text-center text-slate-500 ">Application</p>
                   <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-500">
                   To find the total time dilation effect on the ISS, we need to combine both types of
@@ -163,7 +167,7 @@ export default function Experiment() {
                   values we&apos;ve obtained into one of the relevant equations.
                   </p>
       </div>
-      <div style={{width:"10wh"}} className="bg-black">
+      <div style={{width:"10wh"}} className="bg-black mb-8">
         <p className="text-4xl mb-14 pt-28 font-medium  px-48 leading-10 text-center text-white ">Finding the Wavelength</p>
           <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-100">
           Once the time dilation effect has been calculated, it can be applied to the wavelength of the 
@@ -176,6 +180,25 @@ export default function Experiment() {
           Time Dilation (γ) x Original Uplink Wavelength (λ) = Wavelength Recieved
           </p>
       </div>
+      <Link href='/results'>
+        <section
+          id="get-free-shares-today"
+          className="relative overflow-hidden bg-black py-20 sm:py-32 transition-all delay-100 ease-in-out pointer-events-auto hover:invert cursor-pointer"
+        >
+          <div className="absolute left-20 top-1/2 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
+            <CircleBackground color="#FFF" className="animate-spin-slower" />
+          </div>
+          <Container className="relative">
+            <div className="mx-auto max-w-md sm:text-center">
+              <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
+                Our Results
+              </h2>
+              <p className="mt-4 text-lg text-gray-300">
+              </p>
+            </div>
+          </Container>
+        </section>
+      </Link>
     </>
   )
 }

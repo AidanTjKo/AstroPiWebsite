@@ -124,7 +124,7 @@ function MobileNavigation(props) {
                 <MobileNavItem href="/experiment">Experiment</MobileNavItem>
                 <MobileNavItem href="/results">Results</MobileNavItem>
                 <MobileNavItem href="/our-team">Our Team</MobileNavItem>
-                <MobileNavItem href="/#">Timeline</MobileNavItem>
+                {/* <MobileNavItem href="/#">Timeline</MobileNavItem> */}
               </ul>
             </nav>
           </Popover.Panel>
@@ -160,11 +160,12 @@ function NavItem({ href, children }) {
 function DesktopNavigation(props) {
   return (
     <nav {...props}>
-      <ul style={{minWidth: "370px"}} className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+      <ul style={{minWidth: "290px"}} className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/experiment">Experiment</NavItem>
         <NavItem href="/results">Results</NavItem>
         <NavItem href="/our-team">Our Team</NavItem>
-        <NavItem href="/#">Timeline</NavItem>
+        {/* <NavItem href="/#">Timeline</NavItem> */}
+        {/* min width is 370 with our team */}
       </ul>
     </nav>
   )

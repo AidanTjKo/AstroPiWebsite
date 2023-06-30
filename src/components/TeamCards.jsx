@@ -40,7 +40,7 @@ const people = [{
 },
 {
     name: 'James Fielding',
-    role: 'Planning / Mathematician',
+    role: 'Mathematician',
     imageUrl: james,
     twitterUrl: '#',
     linkedinUrl: '#',

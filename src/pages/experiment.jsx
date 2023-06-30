@@ -10,6 +10,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
+
 import blackhole from '@/images/photos/blackhole.jpg'
 import gravityTimeDilation from '@/images/photos/gravityTimedilation.png'
 import velocityTimeDilation from '@/images/gifs/invertedTimeDilation.gif'
@@ -78,7 +79,7 @@ export default function Experiment() {
             <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               Our Experiment
             </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 space-y-7 text-base text-zinc-200 text-base">
               <p className="py-16">
               Time dilation, a key concept in Einstein&apos;s theories of relativity, 
               describes how time can appear to &apos;slow down&apos; or &apos;speed up&apos; depending
@@ -128,9 +129,9 @@ export default function Experiment() {
           </div> */}
         </div>
       </Container>
-      <div style={{width:"10wh"}} className="bg-white">
+      <div style={{width:"10wh"}} className="pb-20 bg-white">
                   <p className="text-4xl pt-28 font-medium  px-48 leading-10 text-center text-slate-500 ">How is this relevant to the ISS?</p>
-                  <p className="text-3xl pt-20 pb-32  px-48 leading-10 text-center text-slate-500">
+                  <p className="text-2xl pt-20 pb-32  px-48 leading-10 text-center text-slate-500">
                   In the context of the International Space Station (ISS), both types of time dilation 
                   are relevant. The ISS is moving at high speeds relative to an observer on Earth 
                   (velocity time dilation), and it&apos;s also further from the center of the Earth and 
@@ -138,19 +139,38 @@ export default function Experiment() {
                   </p>
                   <hr class="w-11/12 h-0.5 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
                   <p className="text-4xl py-14 font-medium  px-48 leading-10 text-center text-slate-500 ">Application</p>
-                  <p className="text-3xl pb-56  px-48 leading-10 text-center text-slate-500">
+                  <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-500">
                   To find the total time dilation effect on the ISS, we need to combine both types of
                   time dilation. This is done by adding the individual effects. It&apos;s important to note 
                   that because the effects are very small, they don&apos;t simply add linearly. Instead, we 
                   have to use the principles of Einstein&apos;s relativity to properly combine them, giving 
-                  a more accurate estimation of the overall time dilation experienced aboard the ISS.
+                  a more accurate estimation of the overall time dilation experienced aboard the ISS. The 
+                  equations are as such:
                   </p>
                   <Image
                     src={equations}
+                    unoptimized={true}
                     alt=""
                     sizes="(min-width: 1024px) 32rem, 20rem"
-                    className="aspect-auto  rounded-2xl object-cover bg-white"
+                    className="aspect-auto rounded-2xl object-scale-down h-96 bg-white"
                   />
+                  <p className="text-2xl pt-16 pb-12 font-medium px-48 leading-10 text-center text-slate-500">
+                  To calculate the total time dilation experienced by the ISS, we simply substitute the 
+                  values we've obtained into one of the relevant equations.
+                  </p>
+      </div>
+      <div style={{width:"10wh"}} className="bg-black">
+        <p className="text-4xl mb-14 pt-28 font-medium  px-48 leading-10 text-center text-white ">Finding the Wavelength</p>
+          <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-100">
+          Once the time dilation effect has been calculated, it can be applied to the wavelength of the 
+          uplink transmission to the ISS. This is done by multiplying the time dilation factor by the 
+          original wavelength. The wavelength of a wave is directly proportional to its period (and inversely 
+          proportional to its frequency), so if time appears to be 'stretched' due to time dilation, so too will 
+          the wavelength. The equation to calculate the wavelength recieved by the ISS is as follows:
+          </p>
+          <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-100">
+          Time Dilation (γ) x Original Uplink Wavelength (λ) = Wavelength Recieved
+          </p>
       </div>
     </>
   )

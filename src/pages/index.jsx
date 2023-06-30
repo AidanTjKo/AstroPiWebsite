@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 
 import heroBanner from 'public/hero_banner.jpg'
 import wave from 'src/images/photos/wave.jpeg'
@@ -10,6 +11,13 @@ import spaceBanner from '/src/images/photos/spaceBannerTransformed.jpeg'
 export default function Index() {
     return (
         <>
+            <Head>
+                <title>Home Page</title>
+                <meta
+                name="Home Page"
+                content="Software I use, gadgets I love, and other things I recommend."
+                />
+            </Head>
             <div style={{backgroundImage:`url(${heroBanner.src})`,backgroundSize:"cover", height:"85vh",width:"100wh"}} className="bg-yellow-900 relative">
                 <p className="text-5xl font-semibold tracking-wider py-56 lg:px-48 leading-10 lg:text-center text-slate-300 md:px-21 md:text-center ">Los Pollos El En Espacio</p>
                 <div className="absolute w-10 bottom-4 left-1/2">
@@ -35,7 +43,7 @@ export default function Index() {
             </div>
             <div style={{backgroundImage:`url(${wave.src})`,backgroundSize:"contain",backgroundRepeat:"no-repeat", height:"100vh", backgroundPosition:"center"}} className="relative border-solid border-white border-2">
                 <div className='relative text-center py-96 -left-28'>
-                    <Link href="/#" className=" text-center px-auto absolute snap-center px-20 py-10 font-bold text-white rounded-lg group">
+                    <Link href="/results" className=" text-center px-auto absolute snap-center px-20 py-10 font-bold text-white rounded-lg group">
                         <span className="absolute inset-0 w-full h-full transition duration-300 transform -translate-x-3 -translate-y-3 border-white border-2 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full transition duration-300 transform translate-x-3 translate-y-3 bg-gray-800 border-white border-2 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
                         <span className="relative text-xl text-white" >Results</span>

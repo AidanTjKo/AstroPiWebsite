@@ -51,7 +51,14 @@ export default function Experiment() {
           content="Our Experiment"
         />
       </Head>
-      <Container className="mt-16 sm:mt-16">
+      <h1 className="text-3xl font-bold tracking-tight text-zinc-800 mt-20 text-center dark:text-zinc-100 sm:text-5xl">
+              Our Experiment
+      </h1>
+      <p className="text-2xl text-white text-center pt-20">
+        In our experiment, we examine the influence of time 
+        dilation on the wavelengths of transmission signals 
+        received by the International Space Station (ISS).</p>
+      <Container className="mt-10 sm:mt-10 ">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20 bg-black">
             <div className="max-w-xs px-2 lg:max-w-none">
@@ -59,7 +66,7 @@ export default function Experiment() {
                 src={blackhole}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-auto rotate-3 rounded-2xl object-cover bg-black py-20"
+                className="aspect-auto rotate-3 rounded-2xl object-cover bg-black py-16"
               />
               <Image
                 src={gravityTimeDilation}
@@ -76,9 +83,6 @@ export default function Experiment() {
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Our Experiment
-            </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-200 text-base">
               <p className="py-16">
               Time dilation, a key concept in Einstein&apos;s theories of relativity, 
@@ -168,7 +172,7 @@ export default function Experiment() {
           proportional to its frequency), so if time appears to be &apos;stretched&apos; due to time dilation, so too will 
           the wavelength. The equation to calculate the wavelength recieved by the ISS is as follows:
           </p>
-          <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-100">
+          <p className="font-semibold text-2xl pb-16  px-48 leading-10 text-center text-slate-100">
           Time Dilation (γ) x Original Uplink Wavelength (λ) = Wavelength Recieved
           </p>
       </div>

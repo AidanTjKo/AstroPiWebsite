@@ -25,7 +25,7 @@ function SocialLink({ className, href, children, icon: Icon }) {
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-sm font-medium text-zinc-800 transition duration-500 hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
         <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
         <span className="ml-4">{children}</span>
@@ -58,7 +58,7 @@ export default function Experiment() {
       <h1 className="text-3xl font-bold tracking-tight text-zinc-800 mt-20 text-center dark:text-zinc-100 sm:text-5xl">
               Our Experiment
       </h1>
-      <p className="text-2xl text-white text-center pt-20">
+      <p className="md:text-3xl text-2xl pt-20  pb-12 md:pb-28 md:px-48 sm:px-auto leading-10 text-center text-slate-300">
         In our experiment, we examine the influence of time 
         dilation on the wavelengths of transmission signals 
         received by the International Space Station (ISS).</p>
@@ -103,7 +103,7 @@ export default function Experiment() {
 
 
               </p>
-              <p className="py-16">
+              <p className="pt-16 pb-28">
               <span className="font-bold">Velocity Time Dilation:</span> This form of time dilation arises from Einstein &apos;s 
               Special Theory of Relativity. It occurs due to differences in relative velocity 
               between two observers. If one observer is moving relative to another observer, 
@@ -138,16 +138,16 @@ export default function Experiment() {
         </div>
       </Container>
       <div style={{width:"10wh"}} className="pb-20 bg-white">
-                  <p className="text-4xl pt-28 font-medium  px-48 leading-10 text-center text-slate-500 ">How is this relevant to the ISS?</p>
-                  <p className="text-2xl pt-20 pb-32  px-48 leading-10 text-center text-slate-500">
+                  <p className="md:text-4xl text-3xl pt-44 font-medium md:px-48 sm:px-auto leading-10 text-center text-slate-500">How is this relevant to the ISS?</p>
+                  <p className="md:text-3xl text-2xl pt-20 pb-56 md:px-48 sm:px-auto leading-10 text-center text-slate-500">
                   In the context of the International Space Station (ISS), both types of time dilation 
                   are relevant. The ISS is moving at high speeds relative to an observer on Earth 
                   (velocity time dilation), and it&apos;s also further from the center of the Earth and 
                   thus experiences less gravitational pull (gravitational time dilation).
                   </p>
                   <hr className="w-11/12 h-0.5 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-                  <p className="text-4xl py-14 font-medium  px-48 leading-10 text-center text-slate-500 ">Application</p>
-                  <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-500">
+                  <p className="md:text-4xl text-3xl pt-44 font-medium md:px-48 sm:px-auto leading-10 text-center text-slate-500">Application</p>
+                  <p className="md:text-3xl text-2xl pt-20  pb-12 md:pb-28 md:px-48 sm:px-auto leading-10 text-center text-slate-500">
                   To find the total time dilation effect on the ISS, we need to combine both types of
                   time dilation. This is done by adding the individual effects. It&apos;s important to note 
                   that because the effects are very small, they don&apos;t simply add linearly. Instead, we 
@@ -160,37 +160,37 @@ export default function Experiment() {
                     unoptimized={true}
                     alt=""
                     sizes="(min-width: 1024px) 32rem, 20rem"
-                    className="aspect-auto rounded-2xl object-scale-down h-96 bg-white"
+                    className="aspect-auto rounded-2xl md:object-scale-down md:h-96 bg-white"
                   />
-                  <p className="text-2xl pt-16 pb-12 font-medium px-48 leading-10 text-center text-slate-500">
+                  <p className="md:text-3xl text-2xl pt-28 pb-20 font-medium md:px-48 sm:px-auto leading-10 text-center text-slate-500">
                   To calculate the total time dilation experienced by the ISS, we simply substitute the 
                   values we&apos;ve obtained into one of the relevant equations.
                   </p>
       </div>
       <div style={{width:"10wh"}} className="bg-black mb-8">
-        <p className="text-4xl mb-14 pt-28 font-medium  px-48 leading-10 text-center text-white ">Finding the Wavelength</p>
-          <p className="text-2xl pb-16  px-48 leading-10 text-center text-slate-100">
+        <p className="md:text-4xl text-3xl pt-44 font-medium md:px-48 sm:px-auto leading-10 text-center text-white">Finding the Wavelength</p>
+          <p className="md:text-3xl text-2xl pt-20  pb-12 md:pb-28 md:px-48 sm:px-auto leading-10 text-center text-slate-100">
           Once the time dilation effect has been calculated, it can be applied to the wavelength of the 
           uplink transmission to the ISS. This is done by multiplying the time dilation factor by the 
           original wavelength. The wavelength of a wave is directly proportional to its period (and inversely 
           proportional to its frequency), so if time appears to be &apos;stretched&apos; due to time dilation, so too will 
           the wavelength. The equation to calculate the wavelength recieved by the ISS is as follows:
           </p>
-          <p className="font-semibold text-2xl pb-16  px-48 leading-10 text-center text-slate-100">
+          <p className="md:text-4xl text-3xl pt-4 pb-32 font-medium md:px-48 sm:px-auto leading-10 text-center text-slate-100">
           Time Dilation (γ) x Original Uplink Wavelength (λ) = Wavelength Recieved
           </p>
       </div>
       <Link href='/results'>
         <section
           id="get-free-shares-today"
-          className="relative overflow-hidden bg-black py-20 sm:py-32 transition-all delay-100 ease-in-out pointer-events-auto hover:invert cursor-pointer"
+          className="relative overflow-hidden bg-black py-20 sm:py-32 duration-300 ease-in-out pointer-events-auto hover:invert cursor-pointer"
         >
-          <div className="absolute left-20 top-1/2 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
             <CircleBackground color="#FFF" className="animate-spin-slower" />
           </div>
           <Container className="relative">
             <div className="mx-auto max-w-md sm:text-center">
-              <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
+              <h2 className="text-center text-3xl font-medium tracking-tight text-white sm:text-4xl">
                 Our Results
               </h2>
               <p className="mt-4 text-lg text-gray-300">

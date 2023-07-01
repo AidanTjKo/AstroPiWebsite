@@ -21,10 +21,10 @@ export function Footer() {
           <Container.Inner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">Experiment</NavLink>
-                <NavLink href="/projects">Results</NavLink>
-                <NavLink href="/speaking">Our Team</NavLink>
-                <NavLink href="/uses">Timeline</NavLink>
+                <NavLink href="/experiment">Experiment</NavLink>
+                <NavLink href="/results">Results</NavLink>
+                <NavLink href="/our-team">Our Team</NavLink>
+                {/* <NavLink href="/timeline">Timeline</NavLink> */}
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Aidan Ko. All rights

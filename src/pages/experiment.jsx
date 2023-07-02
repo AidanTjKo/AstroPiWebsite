@@ -62,33 +62,35 @@ export default function Experiment() {
         In our experiment, we examine the influence of time 
         dilation on the wavelengths of transmission signals 
         received by the International Space Station (ISS).</p>
-      <Container className="mt-10 sm:mt-10 ">
+      <hr className="w-11/12 h-0.5 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+
+      <Container className="mt-10 sm:mt-10 pt-16 pb-16">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-          <div className="lg:pl-20 bg-black">
+          <div className="md:relative absolute lg:pl-20 bg-black">
             <div className="max-w-xs px-2 lg:max-w-none">
               <Image
                 src={blackhole}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-auto rotate-3 rounded-2xl object-cover bg-black py-16"
+                className="aspect-auto rotate-3 rounded-2xl object-cover bg-black"
               />
               <Image
                 src={gravityTimeDilation}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-auto rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                className="aspect-auto rounded-2xl bg-black object-cover pt-20"
               />
               <Image
                 src={velocityTimeDilation}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="absolute aspect-auto rounded-2xl 0 object-cover bg-black py-4 right-48"
+                className="mx-auto aspect-auto rounded-2xl 0 object-cover bg-black py-4 right-48"
               />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
             <div className="mt-6 space-y-7 text-base text-zinc-200 text-base">
-              <p className="py-16">
+              <p className="py-0 pb-20">
               Time dilation, a key concept in Einstein&apos;s theories of relativity, 
               describes how time can appear to &apos;slow down&apos; or &apos;speed up&apos; depending
               on certain conditions. There are two primary types of time dilation:

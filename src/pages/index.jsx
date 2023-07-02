@@ -54,7 +54,7 @@ export default function Index() {
                 </div>
             </div>
             <div style={{backgroundImage:`url(${spaceBanner.src})`}} className="h-screen w-screen bg-contain bg-center bg-repeat content-center relative">
-                <Link href="/our-team" className="py-8 -ml-32 -mt-36 left-1/2 top-1/2 text-center relative inline-flex items-center justify-center px-20 py-6 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+                <Link href="/our-team" className="py-96 -ml-32 -mt-36 left-1/2 top-1/2 text-center relative inline-flex items-center justify-center px-20 py-6 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
                     <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
                     <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
                     <span className="relative group-hover:text-black">Meet the Team</span>
